@@ -23,6 +23,7 @@ nav {
   left: 0;
   top: 0;
   margin: 0 0 0 -320px;
+  -webkit-transition: margin-left 400ms ease-in;
   transition: margin-left 400ms ease-in;
 }
 
@@ -35,12 +36,16 @@ nav a {
 
 nav a:hover {
   color: red;
+  -webkit-transition: color 200ms;
   transition: color 200ms;
 }
 
 main {
   padding: 20px;
+  -webkit-transition: -webkit-transform 400ms ease-in;
+  transition: -webkit-transform 400ms ease-in;
   transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
 }
 
 input {
@@ -57,6 +62,7 @@ label {
   height: 32px;
   background: gray;
   padding: 5px 0;
+  -webkit-transition: left 400ms ease-in;
   transition: left 400ms ease-in;
 }
 
@@ -77,5 +83,6 @@ input:checked ~ nav{
 }
 
 input:checked ~ main {
-  transform: translate3d(320px, 0, 0);
+  -webkit-transform: translate3d(320px, 0, 0);
+          transform: translate3d(320px, 0, 0);
 }
