@@ -60,18 +60,10 @@ label {
   display: block;
   width: 32px;
   height: 32px;
-  background: gray;
+  background: url(https://goo.gl/MU28uI) no-repeat center / cover;
   padding: 5px 0;
   -webkit-transition: left 400ms ease-in;
   transition: left 400ms ease-in;
-}
-
-label span {
-  display: block;
-  color: white;
-  text-align: center;
-  line-height: 5px;
-  font-size: 30px;
 }
 
 input:checked ~ label{
